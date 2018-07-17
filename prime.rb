@@ -1,7 +1,7 @@
 def prime?(n)
   if n < 2
     return false
-  else
+  end
     array = (2..n-1).to_a
     array.each do |number|
       if n % number == 0
@@ -10,6 +10,5 @@ def prime?(n)
         true
       end
     end
-  end
   return true
 end
