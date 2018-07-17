@@ -1,7 +1,10 @@
 def prime?(n)
-  dividers = [2, 3, 4, 5, 6, 7, 8, 9]
-  dividers.delete(n)
-  dividers.map do |number|
-    n % number
+  array = 2..n-1.to_a
+  array.each do |number|
+    if n % |number| == 0
+      false
+    else
+      true
+    end
   end
 end
